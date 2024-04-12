@@ -5,6 +5,8 @@ import CreateCharacter from "./pages/CreateCharacter";
 import ViewGallery from "./pages/ViewGallery";
 import Home from "./pages/Home";
 import EditCharacter from './pages/EditCharacter';
+import ViewDetail from './pages/ViewDetail';
+
 
 const App = () =>{
 
@@ -21,6 +23,7 @@ const App = () =>{
           <Route path="/create-new" element={<CreateCharacter/>}/>
           <Route path="/view-gallery" element={<ViewGallery/>}/>
           <Route path="/edit-character/:id" element={<EditCharacter/>}/>
+          <Route path="/view-detail/:id" element={<ViewDetail/>}/>
         </Routes>
       </div>
   );

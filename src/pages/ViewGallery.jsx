@@ -25,8 +25,10 @@ const ViewGallery = () => {
     }, [])
 
     const handleClick = (id) => {
-        //This needs to lead to the specific character that the user pressed on
+        // Redirect to the detail page for the specific character
+        window.location = `view-detail/${id}`;
     }
+    
 
     return (
         <>
@@ -38,7 +40,7 @@ const ViewGallery = () => {
 
                 <div className="complete-character-card" key={character.id} >
 
-                    <div className="character-stats" onClick={handleClick(character.id)}>
+                    <div className="character-stats" onClick={() => handleClick(character.id)}>
                             <h2>{character.name}</h2>
                             <h2>{character.id}</h2>
 
