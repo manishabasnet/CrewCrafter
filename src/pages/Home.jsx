@@ -1,12 +1,15 @@
-import {react} from "react";
+import React from "react";
+import HomeCSS from "./Home.module.css";
 
 const Home = () => {
     return (
-        <>
-        <h1>Welcome to CrewCrafter</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero veniam itaque qui delectus illo hic quas eos amet ab? Harum quaerat similique accusamus magnam cupiditate eos ipsa assumenda voluptas rem!</p>
-        </>
-    )
-}
+        <div className={HomeCSS.container}>
+            <div className={HomeCSS.content}>
+                <h2 className={HomeCSS.headerName}>Welcome to CrewCrafter</h2>
+                <p>Create and Edit you crew. Give it a personal touch.</p>
+            </div>
+        </div>
+    );
+};
 
-export default Home
+export default Home;

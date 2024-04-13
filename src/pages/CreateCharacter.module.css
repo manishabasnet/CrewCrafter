@@ -1,0 +1,55 @@
+/* EditCharacter.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 100vh; 
+  }
+  
+  .form {
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .form input {
+    width: 100%; /* Set input width to 100% of the parent */
+    margin-bottom: 10px; /* Add margin between form inputs */
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: space-between; /* Space out buttons evenly */
+    width: 100%; /* Ensure buttons take up full width of container */
+  }
+  
+  .deleteButton,
+  .submitButton {
+    flex-grow: 1; /* Each button takes up equal space */
+    margin-right: 10px; /* Add margin between buttons */
+  }
+  
+  .deleteButton {
+    background-color: #ff0000; /* Red background color for delete button */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .deleteButton:hover {
+    background-color: #cc0000; /* Darker red on hover */
+  }
+  
+  .submitButton {
+    background-color: #333; /* Example background color for submit button */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .submitButton:hover {
+    background-color: #555; /* Darker background color on hover */
+  }
+  

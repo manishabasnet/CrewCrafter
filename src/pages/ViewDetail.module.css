@@ -1,0 +1,16 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; 
+    margin-left: 20%;
+    min-width: 600px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

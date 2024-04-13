@@ -1,0 +1,43 @@
+/* EditCharacter.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Set the container height to 100% of the viewport height */
+  }
+  
+  .form {
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .form input {
+    margin-bottom: 10px; 
+  }
+  
+.buttonContainer{
+    display: block;
+}
+
+  .deleteButton {
+      background-color: #ff0000; /* Red background color for delete button */
+      color: #fff; /* White text color */
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+  }
+
+  .submitButton{
+    background-color: #655d5d; /* Red background color for delete button */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 40px;
+    margin-right: 5px;
+  }
+  
+  .deleteButton:hover {
+    background-color: #cc0000; /* Darker red on hover */
+  }
+  

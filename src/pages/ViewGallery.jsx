@@ -2,6 +2,7 @@ import {react} from "react";
 import { supabase } from '../SupabaseConnection'
 import { useState, useEffect } from "react";
 import {Link} from "react-router-dom";
+import ViewGalleryCSS from './ViewGallery.module.css';
 
 const ViewGallery = () => {
 
@@ -32,30 +33,32 @@ const ViewGallery = () => {
 
     return (
         <>
-        <h1>Gallery Page</h1>
-        <div className="display-characters">
-            {
-                characters && characters.length > 0 ?
-                characters.map((character,index) => 
+        <div className={ViewGalleryCSS.container}>
+            <h1>Gallery Page</h1>
+            <div className={ViewGalleryCSS.displayCharacters}>
+                {
+                    characters && characters.length > 0 ?
+                    characters.map((character,index) => 
 
-                <div className="complete-character-card" key={character.id} >
+                    <div className={ViewGalleryCSS.completeCharacterCard} key={character.id} >
 
-                    <div className="character-stats" onClick={() => handleClick(character.id)}>
-                            <h2>{character.name}</h2>
-                            <h2>{character.id}</h2>
+                        <div className={ViewGalleryCSS.characterStats} onClick={() => handleClick(character.id)}>
+                                <h2>{character.name}</h2>
+                                <h2>{character.superPower}</h2>
+
+                        </div>
+
+                        <div className="edit-button">
+                            <Link to={`/edit-character/${character.id}`}>
+                            <button>Edit Character</button>
+                            </Link>
+                        </div>
 
                     </div>
-
-                    <div className="edit-button">
-                        <Link to={`/edit-character/${character.id}`}>
-                        <button>Edit Character</button>
-                        </Link>
-                    </div>
-
-                </div>
-            ): <h2>{'No Character recruited yet 😞'}</h2>
-            }
-        </div>  
+                ): <h2>{'No Character recruited yet 😞'}</h2>
+                }
+            </div> 
+        </div> 
         </>
     )
 }

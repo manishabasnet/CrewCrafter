@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { supabase } from '../SupabaseConnection';
+import ViewDetailCSS from "./ViewDetail.module.css";
 
 const ViewDetail = () => {
   const { id } = useParams();
@@ -33,12 +34,15 @@ const ViewDetail = () => {
   }
 
   return (
-    <div>
-        <h2>Character Id: {character.id}</h2>
+    <div className={ViewDetailCSS.container}>
+      <h1>Character Details</h1>
+      <div className={ViewDetailCSS.content}>
+      <h2>Character Id: {character.id}</h2>
       <h2>Character name: {character.name}</h2>
       <h2>Character SuperPower: {character.superPower}</h2>
       <h2>Created at: {character.created_at}</h2>
       <Link to= {`/edit-character/:${id}`}><button>Want to edit this character?</button></Link>
+      </div>
     </div>
   );
 };

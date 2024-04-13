@@ -1,5 +1,6 @@
 import {useState} from "react";
 import { supabase } from "../SupabaseConnection";
+import  CreateCharacterCSS from "./CreateCharacter.module.css"
 
 const createCharater = () => {
 
@@ -31,7 +32,8 @@ const createCharater = () => {
     }
     return (
         <>
-        <h1>Character Page</h1>
+        <div className={CreateCharacterCSS.container}>
+        <h1>Create your character here</h1>
 
         <div className="character-input"> 
             <form>
@@ -49,6 +51,7 @@ const createCharater = () => {
 
                 <input type="submit" value="Submit" onClick={createNewCharacter}/>
             </form>
+        </div>
         </div>
         </>
     )

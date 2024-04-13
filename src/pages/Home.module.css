@@ -1,0 +1,16 @@
+/* Home.module.css */
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    height: 100vh; /* Set the container height to 100% of the viewport height */
+  }
+  
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 20px; 
+  }
+  

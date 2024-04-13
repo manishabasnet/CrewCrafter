@@ -1,0 +1,40 @@
+/* ViewGallery.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 100vh; 
+  }
+  
+  .displayCharacters {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .completeCharacterCard {
+    width: 25%;
+    background-color: #555;
+    min-height: 150px;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .edit-button button {
+    background-color: #333; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .edit-button button:hover {
+    background-color: #555;
+  }
+  
